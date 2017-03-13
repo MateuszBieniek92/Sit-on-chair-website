@@ -12,7 +12,7 @@ body {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
-/*    border: 2px solid red;*/
+    border: 2px solid red;
 }
 
 .row::after {
@@ -28,7 +28,7 @@ header {
     background: black;
     background-size: cover;
     font-weight: 700;
-/*    letter-spacing: 1px;*/
+    /*    letter-spacing: 1px;*/
     font-size: 15px;
     height: 40px;
 }
@@ -38,7 +38,6 @@ header {
     color: white;
     margin: 7px 0;
     padding: 5px;
-    
 }
 
 .logo .logoColor {
@@ -47,24 +46,99 @@ header {
 
 .menu {
     float: right;
-    margin: 7px 0;
+    margin: 9px;
     padding: 5px;
-    color:white;
+    color: white;
 }
 
 .menu li {
     display: inline-block;
     padding: 0 15px;
-    margin-right: 0;
+    margin-right: 15px;
 }
+
 
 /* SECTION  1 */
 
 .sectionOne {
     height: 504px;
-    background: -webkit-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(203,202,207,1) 100%);
-    background-size: cover;   
+    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(203, 202, 207, 1) 100%);
+    background-size: cover;
 }
+
+.picture {
+    display: inline-block;
+    float: left;
+    padding: 113px 55px 47px 28px;
+}
+
+.logoBlack {
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    padding: 138px 0 0 524px;
+    font-weight: 500;
+    color: black;
+    float: right;
+}
+
+.logoBlack span {
+    color: #28c7b1;
+    font-weight: 600;
+}
+
+div img {
+    transform: scale(1.25, 1.25);
+}
+
+.text {
+    float: right;
+    padding: 210px 0 0 502px;
+    letter-spacing: 0.4px;
+    position: absolute;
+    color: black;
+    z-index: 10;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    /*    font-weight: 300;        SPRAWDZIC*/
+}
+
+.sectionOne .buttonOne {
+    width: 264px;
+    height: 53px;
+    background-color: #28c7b1;
+    display: inline-block;
+    margin: 324px 5px 6px 22px;
+    border-radius: 9px;
+}
+
+.buttonOne span {
+    position: absolute;
+    margin: 17px 0px 10px 47px;
+    letter-spacing: 0.1px;
+    font-size: 23px;
+    color: white;
+}
+
+.leftButton p {
+    font-size: 50px;
+    float: right;
+    position: absolute;
+    transform: rotate(90deg);
+    margin: -150px 0 0 12px;
+    color: #28c7b1;
+}
+
+.rightButton p {
+    font-size: 50px;
+    /* position: absolute; */
+    transform: rotate(-90deg);
+    color: #28c7b1;
+    float: right;
+    margin: -151px 44px 0px 0px
+}
+
 
 /* SECTION   2 */
 
@@ -74,6 +148,7 @@ header {
     background-size: cover;
 }
 
+
 /* SECTION   3 */
 
 .sectionThree {
@@ -81,6 +156,7 @@ header {
     background: #f1f1f1;
     background-size: cover;
 }
+
 
 /* SECTION   4 */
 
@@ -90,11 +166,11 @@ header {
     background-size: cover;
 }
 
+
 /* FOOTER */
 
 .footer {
     height: 100px;
     background: #ffffff;
     background-size: cover;
-
 }
