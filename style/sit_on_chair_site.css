@@ -5,14 +5,14 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    color: red;
+    color: black;
 }
 
 .container {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
-    border: 2px solid red;
+/*    border: 2px solid red;*/
 }
 
 .row::after {
@@ -22,7 +22,7 @@ body {
 }
 
 
-/* HEADER */
+/*HEADER */
 
 header {
     background: black;
@@ -69,7 +69,7 @@ header {
 .picture {
     display: inline-block;
     float: left;
-    padding: 113px 55px 47px 28px;
+    padding: 113px 55px 48px 28px;
 }
 
 .logoBlack {
@@ -110,7 +110,7 @@ div img {
     background-color: #28c7b1;
     display: inline-block;
     margin: 324px 5px 6px 22px;
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 .buttonOne span {
@@ -122,21 +122,20 @@ div img {
 }
 
 .leftButton p {
-    font-size: 50px;
-    float: right;
+    font-size: 70px;
+    float: left;
     position: absolute;
-    transform: rotate(90deg);
-    margin: -150px 0 0 12px;
+    margin: -167px 0 0 12px;
     color: #28c7b1;
+    font-weight: 200;
 }
 
 .rightButton p {
-    font-size: 50px;
-    /* position: absolute; */
-    transform: rotate(-90deg);
+    font-size: 70px;
+    position: absolute;
     color: #28c7b1;
     float: right;
-    margin: -151px 44px 0px 0px
+    margin: -167px 58px 0px 1019px;
 }
 
 
@@ -167,7 +166,7 @@ div img {
     display: inline-block;
     position: relative;
     float: left;
-    margin: 28px 0 0 26px;
+    margin: 28px 0 90px 26px;
 }
 
 .rightText {
@@ -176,8 +175,8 @@ div img {
     background-color: white;
     border: 1px solid #dbdbdb;
     float: right;
-    position: relative;
-    margin: 27px 43px 64px 0;
+    position: absolute;
+    margin: 27px 43px 64px 720px;
 }
 
 .transparentRect {
@@ -400,6 +399,11 @@ div img {
     color: #f1f1f1;
 }
 
+.selection li:hover {
+    background-color: #27c7ab;
+    border: 2px solid #27c7ab;
+}
+
 
 /* SECTION   4 */
 
@@ -407,8 +411,114 @@ div img {
     height: 550px;
     background: #ffffff;
     background-size: cover;
-    position: relative;
 }
+
+.positionSectionFour {
+    margin: 35px 0 0 10px;
+}
+
+.aquaRectSectionFour {
+    margin: 63px 0 0 10px;
+    width: 320px;
+    height: 8px;
+}
+
+.name {
+    width: 635px;
+    position: absolute;
+    height: 65px;
+    margin: 117px 0 0 10px;
+    /*        margin: 117px 0 0 10px;*/
+    border: 1px solid #27c7ab;
+    float: left;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 0 15px;
+}
+
+.email {
+    width: 635px;
+    height: 65px;
+    position: absolute;
+    margin: 207px 0 0 10px;
+    border: 1px solid #27c7ab;
+    float: left;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 0 15px;
+}
+
+.message {
+    width: 635px;
+    height: 188px;
+    position: absolute;
+    margin: 297px 0 0 10px;
+    border: 1px solid #27c7ab;
+    float: left;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 0px 125px 15px;
+}
+
+form {
+    margin: 0 0 0 0; 
+
+}
+
+.checkboxOne {
+    margin: 330px 0 120px 700px;
+    height: 50px;
+    width: 50px;
+    background: #27c7ab;
+/*    float: right;*/
+    display: inline-block;
+    position: relative;
+    
+}
+
+.checkboxOne:checked {
+    background-color: #27c7ab;
+    border: 1px solid #27c7ab;
+    content: '';
+}
+
+.redChair img {
+    float: right;
+    transform: scale(0.98, 0.98);
+    position: absolute;
+    margin: 85px 0 0 718px;
+}
+
+
+.buttonSectionFour {
+    width: 345px;
+    height: 70px;
+    background-color: #27c7ab;
+    border-radius: 10px;
+    margin: 415px 0 0 -52px;
+    display: inline-block;
+    position: absolute;
+    float: right;
+}
+
+.buttonSectionFour span {
+    position: absolute;
+    letter-spacing: 0.1px;
+    font-size: 33px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 115px;
+    text-align: center;
+}
+
+.checkboxText {
+    position: absolute;
+    float: right;
+    margin: -164px 0 0 763px;
+    font-size: 20px;
+    color: #c4c4c4;
+}
+
 
 
 /* FOOTER */
