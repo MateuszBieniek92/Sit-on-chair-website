@@ -28,10 +28,72 @@ header {
 .menu {
     float: right;
     color: white;
+    margin: 0;
+    padding: 0;
     li {
         display: inline-block;
         padding: 0 27px 0 8px;
         margin: 4px 0 0 6px;
         letter-spacing: 1.1px;
+    }
+    .submenuFirst {
+        display: none;
+        width: 100px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        margin: 25px 0 0 -15px;
+        .triangleOne {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 13px solid black;
+            margin: -10px 0px 0 40px;
+        }
+        li {
+            padding: 7px 10px 0 0;
+            line-height: 8px;
+        }
+    }
+    .submenuSecond {
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        margin: 25px 0 0 -17px;
+        .triangleTwo {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 13px solid black;
+            margin: -10px 0px 0 38px;
+        }
+        li {
+            padding: 7px 10px 0 0;
+            line-height: 8px;
+        }
+    }
+    .submenuThird {
+        display: none;
+        width: 100px;
+        height: 55px;
+        background-color: black;
+        position: absolute;
+        margin: 25px 0 0 -16px;
+        .triangleThree {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 13px solid black;
+            margin: -10px 0px 0 39px;
+        }
+        li {
+            padding: 7px 10px 0 0;
+            line-height: 8px;
+        }
     }
 }

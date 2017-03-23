@@ -84,12 +84,65 @@ header {
 
 .menu {
   float: right;
-  color: white; }
+  color: white;
+  margin: 0;
+  padding: 0; }
   .menu li {
     display: inline-block;
     padding: 0 27px 0 8px;
     margin: 4px 0 0 6px;
     letter-spacing: 1.1px; }
+  .menu .submenuFirst {
+    display: none;
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    margin: 25px 0 0 -15px; }
+    .menu .submenuFirst .triangleOne {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 13px solid black;
+      margin: -10px 0px 0 40px; }
+    .menu .submenuFirst li {
+      padding: 7px 10px 0 0;
+      line-height: 8px; }
+  .menu .submenuSecond {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    margin: 25px 0 0 -17px; }
+    .menu .submenuSecond .triangleTwo {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 13px solid black;
+      margin: -10px 0px 0 38px; }
+    .menu .submenuSecond li {
+      padding: 7px 10px 0 0;
+      line-height: 8px; }
+  .menu .submenuThird {
+    display: none;
+    width: 100px;
+    height: 55px;
+    background-color: black;
+    position: absolute;
+    margin: 25px 0 0 -16px; }
+    .menu .submenuThird .triangleThree {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 13px solid black;
+      margin: -10px 0px 0 39px; }
+    .menu .submenuThird li {
+      padding: 7px 10px 0 0;
+      line-height: 8px; }
 
 /* SECTION 1 */
 .sectionOne {
@@ -107,7 +160,7 @@ header {
 div img {
   transform: scale(1.25, 1.25);
   float: left;
-  padding: 90px 540px 0 0; }
+  margin: 100px 0 0 -68px; }
 
 .sectionContainer {
   text-align: center;
@@ -712,7 +765,8 @@ footer {
   margin: 17px 219px 0 0; }
   .footerPics .icon {
     float: right;
-    padding: 10px 5px 0 0;
+    margin: 0 5px 0 0;
+    padding: 6px 0 0 0;
     transform: scale(1, 1); }
 
 .footerLogo {
