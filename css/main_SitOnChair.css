@@ -154,13 +154,28 @@ header {
 .leftButton p {
   font-size: 70px;
   float: left;
-  padding: 204px 0 0 7px;
-  color: #28c7b1; }
+  margin: 204px 0 0 7px;
+  color: #28c7b1;
+  display: inline;
+  cursor: pointer;
+  z-index: 20; }
 
-div img {
-  transform: scale(1.25, 1.25);
+.sliderUl ul {
+  list-style: none; }
+
+.sliderUl li {
+  display: none;
   float: left;
   margin: 100px 0 0 -68px; }
+
+.sliderUl .visible {
+  display: inline-block; }
+
+.slider {
+  margin: 0;
+  padding: 0;
+  transform: scale(1.25, 1.25);
+  display: inline; }
 
 .sectionContainer {
   text-align: center;
@@ -202,9 +217,10 @@ div img {
 
 .rightButton p {
   font-size: 70px;
-  padding: 204px 26px 0 0;
+  margin: 204px 26px 0 0;
   color: #28c7b1;
-  float: right; }
+  float: right;
+  cursor: pointer; }
 
 /* SECTION 2 */
 .sectionTwo {
@@ -521,8 +537,9 @@ div img {
   color: #aeaeae; }
 
 .image_part img {
-  margin-left: 100px;
-  margin-top: 33px; }
+  margin: 0 0 0 0;
+  margin-left: 20px;
+  margin-top: 80px; }
 
 .application .green_bell {
   background-color: #28c7b1;
@@ -702,12 +719,12 @@ form {
 
 .redChair img {
   transform: scale(0.98, 0.98);
-  margin: -80px 0 0 70px;
+  margin: 15px 0 0 75px;
   display: inline-block; }
 
 .checkboxSectionFive {
   position: relative;
-  margin: 252px 0 0 57px; }
+  margin: 30px 0 0 57px; }
   .checkboxSectionFive input {
     display: block;
     opacity: 0;
