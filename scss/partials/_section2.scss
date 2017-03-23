@@ -1,0 +1,89 @@
+/* SECTION 2 */
+
+.sectionTwo {
+    height: 350px;
+    background: $footer-background-color;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+
+/* img one */
+
+.imgOne {
+    width: 332px;
+    height: 228px;
+    background-image: url(../Sit_on_chair_template/images/box1_img.jpg);
+    background-size: cover;
+    display: inline-block;
+    margin: 28px 0 28px 12px;
+}
+
+.transparentRect {
+    width: 332px;
+    height: 62px;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    margin: 139px 0 0 -10px;
+    opacity: 0.50;
+}
+
+.textOne {
+    display: inline-block;
+    color: $main-label;
+    z-index: 10;
+    font-weight: 700;
+    position: absolute;
+    margin: 152px 0 0 9px;
+    font-size: 16px;
+}
+
+.aquaRect {
+    width: 138px;
+    height: 7px;
+    background-color: $aqua-color;
+    position: absolute;
+    display: inline-block;
+    margin: 172px 0 0 5px;
+}
+
+
+/* img two */
+
+.imgTwo {
+    width: 332px;
+    height: 228px;
+    background-image: url(../Sit_on_chair_template/images/box2_img.jpg);
+    background-size: contain;
+    display: inline-block;
+    margin: 28px 0 28px 26px;
+}
+
+
+/* right text */
+
+.rightText {
+    width: 340px;
+    height: 228px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin: 28px 0 0 26px;
+}
+
+.aquaRectPosition {
+    margin: 38px 0 0 11px;
+}
+
+.rightTextPosition {
+    margin: 16px 0 0 11px;
+}
+
+.textInRightRect {
+    color: $main-label;
+    font-size: 14px;
+    float: left;
+    line-height: 20px;
+    margin: 56px 0 0 11px;
+}

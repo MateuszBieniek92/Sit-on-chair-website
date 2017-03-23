@@ -1,0 +1,179 @@
+/* SECTION 3 */
+
+.sectionThree {
+    height: 725px;
+    background: $section-three-color;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+.priceText {
+    display: inline-block;
+    color: $main-label;
+    font-size: 22px;
+    margin: 33px 0 0 3px;
+}
+
+.aquaRectSectionThree {
+    margin: 65px 0 0 -83px;
+    width: 320px;
+    height: 8px;
+}
+
+.selection div li {
+    display: inline-block;
+    margin: 0 30px 60px 0;
+}
+
+
+/* first element*/
+
+.chooseFormOne {
+    width: 326px;
+    height: 497px;
+    background-color: #f9f9f9;
+    background-size: contain;
+    display: inline-block;
+    margin: 71px 0 0 0;
+    border: 2px solid #dbdbdb;
+}
+
+.bigCircle {
+    width: 55px;
+    height: 55px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: -40px 0px 0 135px;
+    border: 2px solid #dbdbdb;
+    background-color: #f9f9f9;
+}
+
+.smallCircle {
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: -40px 0px 0 150px;
+    border: 2px solid #dbdbdb;
+    background-color: #dbdbdb;
+}
+
+.chooseText {
+    color: $aqua-color;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 25px 0 0 100px;
+}
+
+.circleInsideChooseForm {
+    width: 131px;
+    height: 131px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin: 26px 0px 0 97px;
+    border: 2px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+.price {
+    font-size: 45px;
+    font-weight: 700;
+    color: #dbdbdb;
+    margin: 25px 0 0 32px;
+}
+
+.price sup {
+    vertical-align: super;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.perMonth {
+    font-size: 15px;
+    margin: 4px 0 0 28px;
+    display: inline-block;
+    color: #dbdbdb;
+}
+
+.optionsOfDelievery {
+    margin: 30px 0 0 0px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.optionsOfDelievery tr td {
+    text-align: center;
+    font-size: 22px;
+    color: #aaaaaa;
+}
+
+.optionsOfDelievery tr:nth-child(2n+1) {
+    background-color: #e4e4e4;
+    height: 45px;
+}
+
+.optionsOfDelievery tr:nth-child(2n) {
+    background-color: #f1f1f1;
+    height: 45px;
+}
+
+.buttonSectionThree {
+    width: 125px;
+    height: 33px;
+    background-color: $aqua-color;
+    margin: 113px 0 0 102px;
+    border-radius: 9px;
+    text-align: center;
+    padding: 9px 0 0 0;
+    color: #f1f1f1;
+}
+
+
+/* second element */
+
+.standardPlan {
+    margin: 26px 0 0 68px;
+}
+
+.buttonSectionThreeCenter {
+    margin: 66px 0 0 102px;
+    width: 125px;
+    height: 33px;
+    background-color: $aqua-color;
+    display: inline-block;
+    border-radius: 9px;
+    text-align: center;
+    padding: 9px 0 0 0;
+    color: #f1f1f1;
+}
+
+
+/* third element */
+
+.advancePlan {
+    margin: 26px 0 0 80px;
+}
+
+.buttonSectionThreeRight {
+    margin: 20px 0 0 102px;
+    width: 125px;
+    height: 33px;
+    background-color: $aqua-color;
+    display: inline-block;
+    border-radius: 9px;
+    text-align: center;
+    padding: 9px 0 0 0;
+    color: #f1f1f1;
+}
+
+.correctPrice {
+    margin: 30px 0 0 20px;
+}
+
+.correctPricePerMonth {
+    margin: -1px 28px;
+}

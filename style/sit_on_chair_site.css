@@ -101,7 +101,6 @@ div img {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-    /*    font-weight: 300;        SPRAWDZIC*/
 }
 
 .sectionOne .buttonOne {
@@ -425,10 +424,7 @@ div img {
 
 .name {
     width: 635px;
-    position: absolute;
     height: 65px;
-    margin: 117px 0 0 10px;
-    /*        margin: 117px 0 0 10px;*/
     border: 1px solid #27c7ab;
     float: left;
     font-size: 30px;
@@ -439,8 +435,6 @@ div img {
 .email {
     width: 635px;
     height: 65px;
-    position: absolute;
-    margin: 207px 0 0 10px;
     border: 1px solid #27c7ab;
     float: left;
     font-size: 30px;
@@ -451,8 +445,6 @@ div img {
 .message {
     width: 635px;
     height: 188px;
-    position: absolute;
-    margin: 297px 0 0 10px;
     border: 1px solid #27c7ab;
     float: left;
     font-size: 30px;
