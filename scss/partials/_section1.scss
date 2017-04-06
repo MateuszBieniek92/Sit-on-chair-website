@@ -1,13 +1,13 @@
 /* SECTION 1 */
 
 .sectionOne {
-    height: 504px;
+    //height: 504px;
     background: $section-one-color;
     background-size: cover;
     width: 100%;
 }
 
-.leftButton p{
+.leftButton p {
     font-size: 70px;
     float: left;
     margin: 204px 0 0 7px;
@@ -15,6 +15,10 @@
     display: inline;
     cursor: pointer;
     z-index: 20;
+    @media(max-width: 600px) {
+        float: left;
+        width: 10%;
+    }
 }
 
 .sliderUl {
@@ -24,7 +28,7 @@
     li {
         display: none;
         float: left;
-    margin: 100px 0 0 -68px;
+        margin: 100px 0 0 -68px;
     }
 }
 
@@ -35,10 +39,13 @@
 .slider {
     margin: 0;
     padding: 0;
-    transform: scale(1.25, 1.25);
+    //transform: scale(1.25, 1.25);
     display: inline;
+    @media(max-width: 600px) {
+        float: right;
+        width: 80%;
+    }
 }
-
 
 .sectionContainer {
     text-align: center;
@@ -90,4 +97,8 @@
     color: $aqua-color;
     float: right;
     cursor: pointer;
+    @media(max-width: 600px) {
+        float: right;
+        width: 10%;
+    }
 }
