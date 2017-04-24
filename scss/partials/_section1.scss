@@ -7,17 +7,25 @@
     width: 100%;
 }
 
-.leftButton p {
-    font-size: 70px;
-    float: left;
-    margin: 204px 0 0 7px;
-    color: $aqua-color;
-    display: inline;
-    cursor: pointer;
-    z-index: 20;
-    @media(max-width: 600px) {
+.leftButton {
+    @media(min-width: 450px) {
+       // width: 10%;
+    }
+    p {
+        margin: 2em 0 0 0;
+        display: inline;
         float: left;
         width: 10%;
+        font-size: 70px;
+        float: left;
+        color: $aqua-color;
+        cursor: pointer;
+        z-index: 999;
+        position: relative;
+        @media(min-width: 1000px) {
+            margin: 204px 0 0 7px;
+            display: inline;
+        }
     }
 }
 
@@ -28,7 +36,16 @@
     li {
         display: none;
         float: left;
-        margin: 100px 0 0 -68px;
+        margin: -180px 0 0 -68px;
+        @media(min-width: 1000px) {
+            margin: 0 0 0 -68px;
+        }
+    }
+}
+
+.picture {
+    @media(min-width: 450px) {
+        //width: 80%;
     }
 }
 
@@ -39,11 +56,20 @@
 .slider {
     margin: 0;
     padding: 0;
-    //transform: scale(1.25, 1.25);
-    display: inline;
-    @media(max-width: 600px) {
-        float: right;
-        width: 80%;
+    float: right;
+    width: 80%;
+    display: inline-block;
+    margin: 5.35em calc(50% - 15.5em) 0 0;
+    transform: scale(1.55, 1.55);
+    @media(min-width: 450px) {
+        //margin: 5.35em calc(50% - 22em) 0 0;
+               // display: inline;
+       // transform: scale(1.75, 1.75);
+    }
+    @media(min-width: 1000px) {
+        margin: 50px calc(50% - 15.5em) 0 0;
+        display: inline;
+        transform: scale(1.75, 1.75);
     }
 }
 
@@ -53,11 +79,14 @@
 }
 
 .logoBlack {
-    margin: 0 40px 0 0;
-    font-size: 40px;
+    margin: 2em calc(50% - 4.4em) 0 0;
     display: inline-block;
     font-weight: 500;
     color: black;
+    font-size: 40px;
+    @media(min-width: 1000px) {
+        margin: 0 40px 0 0;
+    }
 }
 
 .logoBlack span {
@@ -67,20 +96,26 @@
 }
 
 .text {
-    margin: 27px 40px 0 0;
+    margin: 27px calc(50% - 13em) 0 0;
     letter-spacing: 0.4px;
     color: black;
     font-size: 14px;
     line-height: 22px;
+    @media(min-width: 1000px) {
+        margin: 27px 40px 0 0;
+    }
 }
 
 .sectionOne .buttonOne {
-    margin: 26px 40px 0 0px;
+    margin: 26px calc(50% - 14em) 50px 0px;
     width: 264px;
     height: 53px;
     background-color: $aqua-color;
     display: inline-block;
     border-radius: 10px;
+    @media(min-width: 1000px) {
+        margin: 26px 40px 50px 0px;
+    }
 }
 
 .buttonOne span {
@@ -91,14 +126,26 @@
     color: white;
 }
 
-.rightButton p {
-    font-size: 70px;
-    margin: 204px 26px 0 0;
-    color: $aqua-color;
-    float: right;
-    cursor: pointer;
-    @media(max-width: 600px) {
+.rightButton {
+    @media(min-width: 450px) {
+        position: relative;
         float: right;
-        width: 10%;
+        //width: 10%
+    }
+    p {
+        font-size: 70px;
+        margin: 1.68em 0 0 0;
+        color: $aqua-color;
+        float: right;
+        cursor: pointer;
+        position: relative;
+        z-index: 999;
+        @media(min-width: 1000px) {
+            margin: 204px 26px 0 0;
+            display: flex;
+            flex-direction: row;
+            float: right;
+            width: 10%;
+        }
     }
 }

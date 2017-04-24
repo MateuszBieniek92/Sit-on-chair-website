@@ -54,12 +54,11 @@
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  border: 1px solid red;
   padding: 10px; }
   @media (max-width: 400px) {
     [class*='col-'] {
       float: none;
-      width: 100% !important; } }
+      width: 100%; } }
 
 /* HEADER */
 header {
@@ -152,17 +151,20 @@ header {
   width: 100%; }
 
 .leftButton p {
+  margin: 2em 0 0 0;
+  display: inline;
+  float: left;
+  width: 10%;
   font-size: 70px;
   float: left;
-  margin: 204px 0 0 7px;
   color: #28c7b1;
-  display: inline;
   cursor: pointer;
-  z-index: 20; }
-  @media (max-width: 600px) {
+  z-index: 999;
+  position: relative; }
+  @media (min-width: 1000px) {
     .leftButton p {
-      float: left;
-      width: 10%; } }
+      margin: 204px 0 0 7px;
+      display: inline; } }
 
 .sliderUl ul {
   list-style: none; }
@@ -170,7 +172,10 @@ header {
 .sliderUl li {
   display: none;
   float: left;
-  margin: 100px 0 0 -68px; }
+  margin: -180px 0 0 -68px; }
+  @media (min-width: 1000px) {
+    .sliderUl li {
+      margin: 0 0 0 -68px; } }
 
 .sliderUl .visible {
   display: inline-block; }
@@ -178,22 +183,30 @@ header {
 .slider {
   margin: 0;
   padding: 0;
-  display: inline; }
-  @media (max-width: 600px) {
+  float: right;
+  width: 80%;
+  display: inline-block;
+  margin: 5.35em calc(50% - 15.5em) 0 0;
+  transform: scale(1.55, 1.55); }
+  @media (min-width: 1000px) {
     .slider {
-      float: right;
-      width: 80%; } }
+      margin: 50px calc(50% - 15.5em) 0 0;
+      display: inline;
+      transform: scale(1.75, 1.75); } }
 
 .sectionContainer {
   text-align: center;
   padding: 135px 0 0 0; }
 
 .logoBlack {
-  margin: 0 40px 0 0;
-  font-size: 40px;
+  margin: 2em calc(50% - 4.4em) 0 0;
   display: inline-block;
   font-weight: 500;
-  color: black; }
+  color: black;
+  font-size: 40px; }
+  @media (min-width: 1000px) {
+    .logoBlack {
+      margin: 0 40px 0 0; } }
 
 .logoBlack span {
   font-size: 40px;
@@ -201,19 +214,25 @@ header {
   font-weight: 600; }
 
 .text {
-  margin: 27px 40px 0 0;
+  margin: 27px calc(50% - 13em) 0 0;
   letter-spacing: 0.4px;
   color: black;
   font-size: 14px;
   line-height: 22px; }
+  @media (min-width: 1000px) {
+    .text {
+      margin: 27px 40px 0 0; } }
 
 .sectionOne .buttonOne {
-  margin: 26px 40px 0 0px;
+  margin: 26px calc(50% - 14em) 50px 0px;
   width: 264px;
   height: 53px;
   background-color: #28c7b1;
   display: inline-block;
   border-radius: 10px; }
+  @media (min-width: 1000px) {
+    .sectionOne .buttonOne {
+      margin: 26px 40px 50px 0px; } }
 
 .buttonOne span {
   padding: 13px;
@@ -222,14 +241,24 @@ header {
   font-size: 23px;
   color: white; }
 
+@media (min-width: 450px) {
+  .rightButton {
+    position: relative;
+    float: right; } }
+
 .rightButton p {
   font-size: 70px;
-  margin: 204px 26px 0 0;
+  margin: 1.68em 0 0 0;
   color: #28c7b1;
   float: right;
-  cursor: pointer; }
-  @media (max-width: 600px) {
+  cursor: pointer;
+  position: relative;
+  z-index: 999; }
+  @media (min-width: 1000px) {
     .rightButton p {
+      margin: 204px 26px 0 0;
+      display: flex;
+      flex-direction: row;
       float: right;
       width: 10%; } }
 

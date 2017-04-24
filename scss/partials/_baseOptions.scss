@@ -32,10 +32,10 @@
 [class*='col-'] {
     float: left;
     min-height: 1px;
-            border: 1px solid red;
+          //  border: 1px solid red;
     padding: 10px;
     @media (max-width: 400px) {
         float: none;
-        width: 100% !important;
+        width: 100% ;
     }
 }
