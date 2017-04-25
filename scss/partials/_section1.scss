@@ -9,7 +9,7 @@
 
 .leftButton {
     @media(min-width: 450px) {
-       // width: 10%;
+        // width: 10%;
     }
     p {
         margin: 2em 0 0 0;
@@ -34,23 +34,28 @@
         list-style: none;
     }
     li {
+        width: 90%;
         display: none;
         float: left;
-        margin: -180px 0 0 -68px;
+        margin: 0 0 0 -110px;
         @media(min-width: 1000px) {
             margin: 70px 0 0 -68px;
+            width: 100%;
+        }
+        img {
+            transform: scale(0.75, 0.75);
+            @media(min-width: 450px) {
+                transform: scale(1, 1);
+            }
         }
     }
 }
 
-.picture {
+#liTransform {
+    transform: scale(1.45, 1.45);
     @media(min-width: 450px) {
-       
+        transform: scale(1.75, 1.75);
     }
-}
-
-.sliderUl .visible {
-    display: inline-block;
 }
 
 .slider {
@@ -59,19 +64,28 @@
     float: right;
     width: 80%;
     display: inline-block;
-    margin: 5.35em calc(50% - 15.5em) 0 0;
+    margin: 7.35em calc(50% - 16.5em) 0 0;
     transform: scale(1.55, 1.55);
-    padding-bottom: 2.8em;
+    padding-bottom: 5.8em;
     @media(min-width: 450px) {
         //margin: 5.35em calc(50% - 22em) 0 0;
-               // display: inline;
-       // transform: scale(1.75, 1.75);
+        // display: inline;
+        // transform: scale(1.75, 1.75);
     }
     @media(min-width: 1000px) {
-        margin: 33px calc(50% - 15.5em) 0 0;
+        margin: 70px calc(50% - 15.5em) 0 0;
         display: inline;
+          padding-bottom: 0;
         transform: scale(1.75, 1.75);
     }
+}
+
+.picture {
+    @media(min-width: 450px) {}
+}
+
+.sliderUl .visible {
+    display: inline-block;
 }
 
 .sectionContainer {
@@ -115,7 +129,7 @@
     background-color: $aqua-color;
     display: inline-block;
     border-radius: 10px;
-    @media(min-width: 1000px) {
+    @media(min-width: 450px) {
         cursor: pointer;
         margin: 26px 40px 50px 0px;
     }

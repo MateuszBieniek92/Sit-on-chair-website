@@ -1,9 +1,15 @@
 /* FOOTER */
 
 footer {
-    height: 100px;
+    position: relative;
+    top: 930px;
+    height: 240px;
     background: $footer-background-color;
     background-size: cover;
+    @media(min-width: 450px) {
+        height: 100px;
+        top: 0;
+    }
 }
 
 .copyright {
@@ -12,25 +18,34 @@ footer {
     font-weight: 500;
     color: $grey-text;
     letter-spacing: 0.8px;
-    margin: 41px 0 0 5px;
+    margin: -250px 0 0 5px;
+    text-align: center;
+    @media(min-width: 450px) {
+        margin: 41px 0 0 5px;
+    }
 }
 
 .footerPics {
+    margin: -400px calc(50% - 62px) 0 0;
+    transform: scale(1.5, 1.5);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 17px 219px 0 0;
     .icon {
         float: right;
         margin: 0 5px 0 0;
         padding: 6px 0 0 0;
         transform: scale(1, 1);
     }
+    @media(min-width: 450px) {
+        margin: 17px 219px 0 0;
+        transform: scale(1, 1);
+    }
 }
 
 .footerLogo {
+    margin: -310px calc(50% - 65px) 0 0px;
     float: right;
-    margin: -24px 24px 0 0px;
     font-size: 20px;
     font-weight: 500;
     color: $grey-text;
@@ -38,5 +53,8 @@ footer {
     span {
         font-size: 20px;
         font-weight: 800;
+    }
+    @media(min-width: 450px) {
+        margin: -24px 24px 0 0px;
     }
 }

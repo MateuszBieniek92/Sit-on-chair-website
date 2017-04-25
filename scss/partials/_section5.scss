@@ -1,9 +1,14 @@
 /* SECTION 5 */
 
 .sectionFive {
+    position: relative;
+    top: 535px;
     height: 550px;
     background: $footer-background-color;
     background-size: cover;
+    @media(min-width: 450px) {
+        top: 0;
+    }
 }
 
 .positionSectionFive {
@@ -17,7 +22,7 @@
 }
 
 .name {
-    width: 635px;
+    width: 325px;
     height: 65px;
     margin: 37px 0 0 8px;
     border: 1px solid $aqua-color;
@@ -25,10 +30,16 @@
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     padding: 0 0 0 15px;
+    @media(min-width: 450px) {
+        width: 450px;
+    }
+    @media(min-width: 1000px) {
+        width: 635px;
+    }
 }
 
 .email {
-    width: 635px;
+    width: 325px;
     height: 65px;
     margin: 29px 0 0 8px;
     border: 1px solid $aqua-color;
@@ -36,10 +47,16 @@
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     padding: 0 0 0 15px;
+    @media(min-width: 450px) {
+        width: 450px;
+    }
+    @media(min-width: 1000px) {
+        width: 635px;
+    }
 }
 
 .message {
-    width: 635px;
+    width: 325px;
     height: 188px;
     margin: 29px 0 0 8px;
     border: 1px solid $aqua-color;
@@ -47,6 +64,12 @@
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     padding: 0px 0px 125px 15px;
+    @media(min-width: 450px) {
+        width: 450px;
+    }
+    @media(min-width: 1000px) {
+        width: 635px;
+    }
 }
 
 form {
@@ -56,7 +79,7 @@ form {
 .buttonSectionFive {
     width: 345px;
     height: 70px;
-    margin: 35px 37px 0 0;
+    margin: 35px -3px 35px 0;
     background-color: $aqua-color;
     border-radius: 10px;
     display: inline-block;
@@ -69,18 +92,35 @@ form {
         font-weight: 600;
         color: white;
         text-align: center;
+        @media(min-width: 450px) {
+            padding: 15px 80px;
+        }
+        @media(min-width: 1000px) {
+            padding: 15px 105px;
+        }
+    }
+    @media(min-width: 450px) {
+        margin: 35px -25px 0 0;
+        width: 300px;
+    }
+    @media(min-width: 1000px) {
+        margin: 35px 37px 0 0;
+        width: 345px;
     }
 }
 
 .redChair img {
-    transform: scale(0.98, 0.98);
-    margin: 15px 0 0 75px;
+    margin: 10px 0 0 calc(50% - 135px);
     display: inline-block;
+    transform: scale(0.98, 0.98);
+    @media(min-width: 450px) {
+        margin: 15px 0 0 75px;
+    }
 }
 
 .checkboxSectionFive {
     position: relative;
-    margin: 30px 0 0 57px;
+    margin: 30px 0 0 calc(50% - 130px);
     input {
         display: block;
         opacity: 0;
@@ -98,6 +138,12 @@ form {
         color: $grey-text;
         line-height: 120%;
         cursor: pointer;
+    }
+    @media(min-width: 450px) {
+        margin: 15px 0 0 35px;
+    }
+    @media(min-width: 1000px) {
+        margin: 30px 0 0 57px;
     }
 }
 
