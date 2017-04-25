@@ -1,11 +1,17 @@
 /* SECTION 3 */
 
 .sectionThree {
-    height: 725px;
+    position: relative;
+    height: 2025px;
+    top: 535px;
     background: $section-three-color;
     background-size: cover;
     width: 100%;
-    display: flex;
+    @media(min-width: 450px) {
+        height: 725px;
+        top: 0;
+        display: flex;
+    }
 }
 
 .priceText {
@@ -30,13 +36,44 @@
 /* first element*/
 
 .chooseFormOne {
+    margin: 71px 0 0 6px;
     width: 326px;
     height: 497px;
     background-color: #f9f9f9;
     background-size: contain;
-    display: inline-block;
-    margin: 71px 0 0 0;
     border: 2px solid #dbdbdb;
+    display: inline-block;
+    cursor: pointer;
+    @media(min-width: 450px) {
+        margin: 71px 0 0 0;
+    }
+}
+
+.chooseFormOne:hover {
+    background: $aqua-color;
+    border: none;
+    .bigCircle {
+        background: $aqua-color;
+        border: none;
+    }
+    .smallCircle {
+        background-color: #ffffff;
+        border: none;
+    }
+    .buttonSectionThree,
+    .buttonSectionThreeCenter,
+    .buttonSectionThreeRight {
+        background: #f9f9f9;
+        color: $aqua-color;
+    }
+    .circleInsideChooseForm {
+        .price {
+            color: $aqua-color;
+        }
+        .perMonth {
+            color: $aqua-color;
+        }
+    }
 }
 
 .bigCircle {

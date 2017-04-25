@@ -38,14 +38,14 @@
         float: left;
         margin: -180px 0 0 -68px;
         @media(min-width: 1000px) {
-            margin: 0 0 0 -68px;
+            margin: 70px 0 0 -68px;
         }
     }
 }
 
 .picture {
     @media(min-width: 450px) {
-        //width: 80%;
+       
     }
 }
 
@@ -61,13 +61,14 @@
     display: inline-block;
     margin: 5.35em calc(50% - 15.5em) 0 0;
     transform: scale(1.55, 1.55);
+    padding-bottom: 2.8em;
     @media(min-width: 450px) {
         //margin: 5.35em calc(50% - 22em) 0 0;
                // display: inline;
        // transform: scale(1.75, 1.75);
     }
     @media(min-width: 1000px) {
-        margin: 50px calc(50% - 15.5em) 0 0;
+        margin: 33px calc(50% - 15.5em) 0 0;
         display: inline;
         transform: scale(1.75, 1.75);
     }
@@ -79,7 +80,7 @@
 }
 
 .logoBlack {
-    margin: 2em calc(50% - 4.4em) 0 0;
+    margin: 0.5em calc(50% - 4.4em) 0 0;
     display: inline-block;
     font-weight: 500;
     color: black;
@@ -107,6 +108,7 @@
 }
 
 .sectionOne .buttonOne {
+    cursor: pointer;
     margin: 26px calc(50% - 14em) 50px 0px;
     width: 264px;
     height: 53px;
@@ -114,6 +116,7 @@
     display: inline-block;
     border-radius: 10px;
     @media(min-width: 1000px) {
+        cursor: pointer;
         margin: 26px 40px 50px 0px;
     }
 }

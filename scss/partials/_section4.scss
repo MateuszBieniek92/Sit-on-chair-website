@@ -2,6 +2,12 @@
 
 .application {
     background:$section-four-color;
+    position: relative;
+    top: 535px;
+    @media(min-width: 450px) {
+     top: 0;   
+    }
+    
 }
 
 
