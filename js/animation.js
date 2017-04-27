@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var liThree = company.querySelector('#thirdLi');
     var submenuThree = company.querySelector('.submenuThird');
 
-
+    
 
     /* menu one */
     liOne.addEventListener("mouseout", function () {
@@ -71,51 +71,48 @@ document.addEventListener("DOMContentLoaded", function () {
         submenuThree.style.display = "inline-block";
     });
 
-    //    function slideToggle() {
-    //        window.clearInterval(intval);
-    //        if (!heightChecked) {
-    //            initHeight = company.offsetHeight;
-    //            heightChecked = true;
-    //        }
-    //        if (open) {
-    //            var h = -20;
-    //            open = false;
-    //            intval = setInterval(function () {
-    //                h++;
-    //                company.style.height = h + 'px';
-    //                if (h >= initHeight)
-    //                    window.clearInterval(intval);
-    //            }, 1);
-    //        } else {
-    //            var h = initHeight;
-    //            open = true;
-    //            intval = setInterval(function () {
-    //                h--;
-    //                company.style.height = h + 'px';
-    //                if (h <= 0)
-    //                    window.clearInterval(intval);
-    //            }, 1);
-    //
-    //
-    //
-    //
-    //        }
-    //    }
-    //    var children = company.children;
-    //
-    //    console.log(children);
-    //
-    //
-    //    showHideMenu.addEventListener("click", function () {
-    //        children.style.display = "inline-block";
-    //        company.className = 'menu mobileMenu';
-    //        slideToggle();
-    //        ulOne.classList.remove('submenuFirst');
-    //        ulTwo.classList.remove('submenuSecond');
-    //        ulThree.classList.remove('submenuThird');
-    //
-    //    });
+    function slideToggle() {
+        window.clearInterval(intval);
+        if (!heightChecked) {
+            initHeight = company.offsetHeight;
+            heightChecked = true;
+        }
+        if (open) {
+            var h = -20;
+            open = false;
+            intval = setInterval(function () {
+                h++;
+                company.style.height = h + 'px';
+                if (h >= initHeight)
+                    window.clearInterval(intval);
+            }, 1);
+        } else {
+            var h = initHeight;
+            open = true;
+            intval = setInterval(function () {
+                h--;
+                company.style.height = h + 'px';
+                if (h <= 0)
+                    window.clearInterval(intval);
+            }, 1);
+        }
+    }
 
+    liOne.classList.remove('visible');
+    liTwo.classList.remove('visible');
+    liThree.classList.remove('visible');
+    var triangle = document.querySelector('.triangleMobile');
+
+    function myFunction() {
+        company.classList.toggle("visible");
+        company.classList.toggle('mobileMenu');
+        triangle.classList.toggle("visible");
+        company.querySelector('li').querySelector('ul').classList.toggle("visible");
+    }
+
+    showHideMenu.addEventListener("click", function () {
+        myFunction()
+    });
 
     /// SECTION 1 SLIDER
 

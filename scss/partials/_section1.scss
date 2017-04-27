@@ -66,7 +66,7 @@
     display: inline-block;
     margin: 7.35em calc(50% - 16.5em) 0 0;
     transform: scale(1.55, 1.55);
-    padding-bottom: 5.8em;
+    padding-bottom: 5.3em;
     @media(min-width: 450px) {
         //margin: 5.35em calc(50% - 22em) 0 0;
         // display: inline;
@@ -165,4 +165,12 @@
             width: 10%;
         }
     }
+}
+
+.visible {
+    display: inline-block;
+}
+
+.invisible {
+    display: none;
 }

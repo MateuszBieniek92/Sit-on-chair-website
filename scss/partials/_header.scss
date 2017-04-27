@@ -64,44 +64,60 @@ header {
 }
 
 .submenuSecond {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    position: absolute;
-    margin: 25px 0 0 -17px;
-    .triangleTwo {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 13px solid black;
-        margin: -10px 0px 0 38px;
-    }
+    list-style: none;
+    padding: 5px 0px 0px 0px;
+    margin: -1px 0px 0px 0px;
     li {
-        padding: 7px 10px 0 0;
-        line-height: 8px;
+        padding: 10px 0px 0px 0px;
+    }
+    @media (min-width: 450px) {
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        margin: 25px 0 0 -17px;
+        .triangleTwo {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 13px solid black;
+            margin: -10px 0px 0 38px;
+        }
+        li {
+            padding: 7px 10px 0 0;
+            line-height: 8px;
+        }
     }
 }
 
 .submenuThird {
-    display: none;
-    width: 100px;
-    height: 55px;
-    background-color: black;
-    position: absolute;
-    margin: 25px 0 0 -16px;
-    .triangleThree {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 13px solid black;
-        margin: -10px 0px 0 39px;
-    }
+    list-style: none;
+    padding: 5px 0px 0px 0px;
+    margin: -1px 0px 0px 0px;
     li {
-        padding: 7px 10px 0 0;
-        line-height: 8px;
+        padding: 10px 0px 0px 0px;
+    }
+    @media (min-width: 450px) {
+        display: none;
+        width: 100px;
+        height: 55px;
+        background-color: black;
+        position: absolute;
+        margin: 25px 0 0 -16px;
+        .triangleThree {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 13px solid black;
+            margin: -10px 0px 0 39px;
+        }
+        li {
+            padding: 7px 10px 0 0;
+            line-height: 8px;
+        }
     }
 }
 
@@ -122,26 +138,41 @@ header {
     }
 }
 
+.triangleMobile {
+    position: relative;
+    top: 35px;
+    left: 110px;
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 13px solid black;
+    margin: -10px 0px 0 39px;
+    @media (min-width: 450px) {
+        display: none;
+    }
+}
+
 .mobileMenu {
     list-style: none;
     display: inline-block;
     background-color: black;
     width: 100px;
-    height: 296px;
-    margin: -10px 0px 0px 79px;
+    margin: 17px 0px 0px 79px;
     z-index: 990;
     position: relative;
     padding: 5px 0;
     li {
-    color: white;
-    font-size: 20px;
-    padding: 2px 0;
+        color: white;
+        font-size: 18px;
+        padding: 3px 10px;
         ul {
-            display: inline-block;
+            display: none;
             list-style: none;
             padding: 5px 0;
             li {
-                margin: 0 10px;
+                margin: 0 -7px;
                 font-size: 14px;
             }
         }
