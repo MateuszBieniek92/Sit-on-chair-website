@@ -26,75 +26,124 @@ header {
 }
 
 .menu {
-    float: right;
-    color: white;
-    margin: 0;
-    padding: 0;
-    li {
-        cursor: pointer;
+    display: none;
+    @media (min-width: 450px) {
         display: inline-block;
-        padding: 0 27px 0 8px;
-        margin: 4px 0 0 6px;
-        letter-spacing: 1.1px;
-    }
-    .submenuFirst {
-        display: none;
-        width: 100px;
-        height: 80px;
-        background-color: black;
-        position: absolute;
-        margin: 25px 0 0 -15px;
-        .triangleOne {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 13px solid black;
-            margin: -10px 0px 0 40px;
-        }
+        float: right;
+        color: white;
+        margin: 0;
+        padding: 0;
         li {
-            padding: 7px 10px 0 0;
-            line-height: 8px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 27px 0 8px;
+            margin: 4px 0 0 6px;
+            letter-spacing: 1.1px;
         }
-    }
-    .submenuSecond {
-        display: none;
-        width: 100px;
-        height: 100px;
-        background-color: black;
-        position: absolute;
-        margin: 25px 0 0 -17px;
-        .triangleTwo {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 13px solid black;
-            margin: -10px 0px 0 38px;
-        }
-        li {
-            padding: 7px 10px 0 0;
-            line-height: 8px;
+        .submenuFirst {
+            display: none;
+            width: 100px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin: 25px 0 0 -15px;
+            .triangleOne {
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 13px solid black;
+                margin: -10px 0px 0 40px;
+            }
+            li {
+                padding: 7px 10px 0 0;
+                line-height: 8px;
+            }
         }
     }
-    .submenuThird {
+}
+
+.submenuSecond {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    margin: 25px 0 0 -17px;
+    .triangleTwo {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 13px solid black;
+        margin: -10px 0px 0 38px;
+    }
+    li {
+        padding: 7px 10px 0 0;
+        line-height: 8px;
+    }
+}
+
+.submenuThird {
+    display: none;
+    width: 100px;
+    height: 55px;
+    background-color: black;
+    position: absolute;
+    margin: 25px 0 0 -16px;
+    .triangleThree {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 13px solid black;
+        margin: -10px 0px 0 39px;
+    }
+    li {
+        padding: 7px 10px 0 0;
+        line-height: 8px;
+    }
+}
+
+.btnMobile {
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 38px;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url(../images/menu-alt-512.png);
+    background-size: contain;
+    float: right;
+    margin-top: -8px;
+    z-index: 999;
+    position: relative;
+    @media (min-width: 450px) {
         display: none;
-        width: 100px;
-        height: 55px;
-        background-color: black;
-        position: absolute;
-        margin: 25px 0 0 -16px;
-        .triangleThree {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 13px solid black;
-            margin: -10px 0px 0 39px;
-        }
-        li {
-            padding: 7px 10px 0 0;
-            line-height: 8px;
+    }
+}
+
+.mobileMenu {
+    list-style: none;
+    display: inline-block;
+    background-color: black;
+    width: 100px;
+    height: 296px;
+    margin: -10px 0px 0px 79px;
+    z-index: 990;
+    position: relative;
+    padding: 5px 0;
+    li {
+    color: white;
+    font-size: 20px;
+    padding: 2px 0;
+        ul {
+            display: inline-block;
+            list-style: none;
+            padding: 5px 0;
+            li {
+                margin: 0 10px;
+                font-size: 14px;
+            }
         }
     }
 }

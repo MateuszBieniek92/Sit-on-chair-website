@@ -1,15 +1,13 @@
 /* SECTION 4 */
 
 .application {
-    background:$section-four-color;
+    background: $section-four-color;
     position: relative;
     top: 535px;
     @media(min-width: 450px) {
-     top: 0;   
+        top: 0;
     }
-    
 }
-
 
 .orderText {
     margin: 33px 0 0 3px;
@@ -113,10 +111,22 @@
     color: #aeaeae;
 }
 
-.image_part img {
-    margin: 0 0 0 0;
-    margin-left: 20px;
-    margin-top: 80px;
+.image_part {
+    img {
+        margin: 0 0 0 0;
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+    .imThree {
+        margin-left: -85px;
+        margin-top: 28px;
+        transform: scale(0.8, 0.8);
+    }
+    .imTwo {
+        margin-left: -85px;
+        margin-top: 28px;
+        transform: scale(0.7, 0.7);
+    }
 }
 
 .application .green_bell {
@@ -177,7 +187,7 @@
 }
 
 .panel_left span {
-    margin-top: 10px;
+    margin-top: 9px;
     font-size: 22px;
     color: $list-label;
     display: block;
@@ -186,16 +196,16 @@
 .panel_right span {
     display: block;
     font-size: 22px;
-    color: $aqua-color;
-    margin-top: 10px;
+    color: $list-label;
+    margin-top: 9px;
 }
 
 .sum_label {
     display: inline-block;
     width: 185px;
     margin-top: 10px;
-    font-size: 22px;
-    color: $list-label;
+    color: $aqua-color;
+    font-size: 23px;
 }
 
 .sum {
@@ -203,8 +213,9 @@
     width: 100px;
     text-align: right;
     margin-top: 10px;
-    font-size: 22px;
-    color: $list-label;
+    color: $aqua-color;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .list_arrow {
@@ -223,24 +234,33 @@
 .list_panel {
     background-color: white;
     border: 1px solid #ccc;
-    width: 288px;
+    width: 280px;
     padding-left: 15px;
     padding-bottom: 10px;
     list-style: none;
-    margin: 0;
-    left: 0px;
+    margin: 27px -1px;
+    left: 0;
     z-index: 2;
     position: absolute;
-    top: 54px;
-    display: none;
+    top: 9px;
 }
 
 .list_panel li {
     margin-top: 10px;
     cursor: pointer;
     color: $list-label;
+    font-size: 20px;
+}
+
+.list_panel li:hover {
+    color: white;
+    background-color: $aqua-color;
 }
 
 .title {
     height: 30px;
+}
+
+.showList {
+    display: none;
 }
