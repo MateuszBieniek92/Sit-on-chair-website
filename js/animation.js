@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //    });
 
 
-    /// SECTION ! SLIDER
+    /// SECTION 1 SLIDER
 
 
     var next = document.querySelector('.rightButton');
